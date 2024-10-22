@@ -9,13 +9,13 @@ int main(){
     playerPoints = 0;
     computerPoints = 0;
     cout<<"***Rock Sizers Paper***"<<endl
-        <<"You can choose (1)Rock, (2)Sizers, (3)Paper"<<endl
+        <<"You can choose (1)Rock, (2)Scissors, (3)Paper"<<endl
         <<"You can play more than one round and compare points"<<endl
         <<"How many rounds do you want to play?"<<endl;
     cin>>rounds;
     for (int i = 0; i <= rounds; i++)
     {
-        cout<<"Rock Sizers Paper!"<<endl
+        cout<<"Rock Scissors Paper!"<<endl
             <<"1 2 3";
         cin>>user;
         computer = (rand() % 3)+1;
@@ -37,7 +37,7 @@ int main(){
                 cout<<"Lets play again"<<endl;
             break;
         case 2:
-            cout<<"Sizers!"<<endl;
+            cout<<"Scissors"<<endl;
             if (user == 3)
             {
                 cout<<"I won!"<<endl;
